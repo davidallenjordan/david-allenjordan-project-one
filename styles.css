@@ -1,0 +1,583 @@
+/* Setup, Default Styles */
+
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+/* Clear Fix */
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+/* Box Sizing*/
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+/* Screen-Reader Only */
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+/* 
+    font-family: 'Barlow', sans-serif;
+
+    font-family: 'Emblema One', cursive;
+ */
+
+
+ /* General Styles / Wrapper */
+
+html {
+  font-size: 62.5%;
+}
+  
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  max-width: 1300px;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/* Typography ----------->     */
+  
+/* Resetting Default Typography Styles */
+
+body, h1, h2, h3, h4, p, ul, form {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+  
+ul {
+  list-style: none;
+}
+
+/* Typography and Icon Styles */
+
+h1 {
+font-size: 10.46rem;
+line-height: 8.73rem;
+}
+
+/* There were no styles on style guide for this subtitle */
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 4.2rem;
+  line-height: 4.2rem;
+}
+
+.best-coffee h3 {
+  line-height: 3.2rem;
+}
+
+h4, .footer-nav a {
+  font-size: 2.5rem;
+}
+
+p {
+  color: #1F2022;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h2, p, a{
+  letter-spacing: 0.2px;
+  font-family: 'Barlow', sans-serif;
+}
+
+p, a, button {
+  font-size: 2rem;
+  line-height: 2.9rem;
+}
+
+.information-links ul p {
+  font-size: 3.12rem;
+}
+
+h1, h3, h4, a:not(.juno), button {
+  text-transform: uppercase;
+}
+
+.copyright a {
+  color: #F5C8CF;
+}
+
+.copyright a:hover,
+h1, h3, h4, button,
+.information-links p,
+.footer-nav a,
+.social-links i {
+  color: #1D81CC;
+}
+
+h1, h3, h4, button,
+.information-links p,
+.footer-nav a {
+  font-family: 'Emblema One', cursive;
+}
+
+button, .copyright p {
+  color: #FFF;
+}
+
+button {
+  background: #042259;
+  padding: 10px 25px;
+  border: none;
+  cursor: pointer;
+}
+
+h2, .blog-button, .information-links i {
+  color: #042259;
+}
+
+header i {
+  font-size: 3rem;
+}
+
+.information-links i {
+  font-size: 6rem;
+}
+
+.blog-button {
+  background: #F5C8CF;
+}
+
+/* Header ------------------>      */
+
+header {
+  background:   url(./assets/header-group-appliances.png) no-repeat bottom right/50%,
+  radial-gradient(at bottom right, #f7eaeb 30%, #F5C8CF);
+  height: 100vh;
+}
+
+/* Mobile Navigation Icon */
+.mobile-nav {
+  display: none
+}
+
+/* Header Social Links */
+
+.social-links ul {
+  margin-top: 150px;
+}
+
+.social-links li {
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Header Navigation */
+
+.social-links ul,
+.header-nav ul {
+  float: right;
+}
+
+.header-nav ul {
+  margin-right: 5%;
+}
+
+.header-nav li {
+  float: left;
+}
+
+.header-nav a {
+  padding: 10px 15px;
+}
+
+/* Header Hero Text */
+
+.hero-container {
+  max-width: 50%;
+  padding-top: 20%;
+}
+
+/* Main: Gallery and Best Appliance Sections -------->   */
+
+.gallery-and-best-coffee {
+  background: #FCDDE2;
+}
+
+/* Gallery Section */
+
+.appliance-gallery h3 {
+  padding: 80px 0;
+}
+
+.appliance-gallery li {
+  width: calc(33% - 25px);
+  display: inline-block;
+}
+
+.appliance-gallery h3,
+.appliance-gallery ul {
+  text-align: center;
+}
+
+.appliance-gallery li,
+.best-coffee-image-container {
+  margin-right: 40px;
+}
+
+.appliance-gallery li:last-of-type {
+  margin-right: 0px;
+}
+
+.best-coffee-image-container {
+  float: left;
+}
+
+/* Best Appliance Section */
+
+.best-coffee {
+  padding: 80px 0;
+}
+
+.best-coffee-image-container {
+  width: 25%;
+}
+
+.best-coffee-text p {
+  padding: 20px 0;
+}
+
+/* Smoothie and New Home Sections ------------->        */
+
+.blog-image-container,
+.blog-text-container {
+  width: 50%;
+}
+
+.blog-smoothie .blog-image-container,
+.blog-smoothie .blog-text-container {
+  float: right;
+}
+
+.blog-new-home .blog-image-container,
+.blog-new-home .blog-text-container {
+  float: left;
+}
+
+.blog-background {
+  background: #F0F5FF;
+}
+
+.blog-text-container p {
+  padding: 20px 0;
+}
+
+.blog-text-container h3 {
+  padding-top: 30%;
+}
+
+.blog-text-container h3,
+.blog-text-container p {
+  width: 90%;
+}
+
+.blog-new-home .blog-text-container {
+  padding-left: 8%;
+}
+
+/* Addition Links / FontAwesome Icons --------->      */
+
+.information-links {
+  background: #FCDDE2;
+}
+
+.information-links li {
+  display: inline-block;
+  padding: 0 10%;
+}
+
+.information-links ul {
+  padding: 5% 0;
+  text-align: center;
+}
+
+.information-links i {
+  padding-bottom: 25px;
+}
+
+/* Footer  --------------->          */
+
+.footer-background {
+  background: #F0F5FF;
+  padding: 100px;
+}
+
+/* Stay Updated Section */
+
+.newsletter,
+input[type="email"],
+form button,
+.contact-info {
+  float: left;
+}
+
+.newsletter,
+input[type="email"] {
+  width: 55%;
+}
+
+.newsletter p {
+  padding: 12px 0;
+}
+
+input[type="email"] {
+  height: 49px;
+  padding-left: 25px;
+  border: 1px solid #F5C8CF;
+}
+
+form button {
+  display: block;
+}
+
+input::placeholder {
+  font-size: 2rem;
+}
+
+/* Contact and Navigation Sections */
+
+.contact-info {
+  width: 30%;
+}
+
+.contact-info h4 {
+  padding-bottom: 17px;
+}
+
+.footer-nav {
+  float: right;
+  text-align: right;
+}
+
+.footer-nav li {
+  padding: 3px 0;
+}
+
+.footer-nav li:first-of-type {
+  padding-top: 0px;
+}
+      
+.footer-nav li:last-of-type {
+  padding-bottom: 0px;
+}
+
+/* Copyright Banner */
+
+.copyright {
+  background: #042259;
+  text-align: center;
+  padding: 20px;
+}
+
+
+/* Media Queries */
+
+@media (max-width: 1450px) {
+
+  .blog-text-container h3 {
+    padding-top: 20%;
+  }
+
+  .best-coffee-image-container {
+    padding-top: 20px;
+    min-width: 309px;
+  }
+
+}
+
+@media (max-width: 1255px) {
+
+  /* Best Appliance and Newsletter Sections */
+
+  .best-coffee-image-container {
+    padding: 0 20%;
+    margin: 0;
+  }
+
+  .best-coffee-image-container,
+  .newsletter,
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .best-coffee-text {
+    clear: both;
+    padding-top: 80px;
+  }
+
+  .blog-text-container h3 {
+    padding-top: 10%;
+  }
+
+  .newsletter,
+  input::placeholder {
+    text-align: center;
+  }
+
+  .newsletter,
+  input[type="email"] {
+    padding: 0;
+  }
+
+  form button {
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+
+  .contact-info {
+    width: 70%;
+  }
+
+  .footer-nav {
+    width: 30%;
+  }
+
+  .contact-info,
+  .footer-nav {
+  padding-top: 40px;
+  }
+
+  /* Blog Section Adjustment */
+
+  .blog-text-container h3 {
+    padding-top: 40px;
+  }
+
+}
+
+@media (max-width: 1170px) {
+
+  /* Header Adjustment */
+
+  .hero-container {
+    padding-top: 25%;
+  }
+
+  /* Gallery Section */
+
+  .appliance-gallery li:last-of-type {
+    visibility: hidden;
+    position: absolute;
+    /* This was creating side-scroll so i positioned it out of the way */
+    left: 0;
+  }
+
+  .appliance-gallery li {
+    margin: 0;
+    width: calc(50% - 40px);
+  }
+
+  .appliance-gallery li:first-of-type {
+    margin-right: 40px;
+  }
+
+  /* Best Appliance and Blog Sections */
+
+  h3, .best-coffee-text,
+  .blog-text-container {
+    text-align: center;
+  }
+
+  .best-coffee-text p,
+  .blog-text-container p {
+    text-align: left;
+  }
+
+  button {
+    float: none;
+    display: inline-block;
+  }
+
+  .blog-image-container,
+  .best-coffee-image-container {
+    padding: 0 10%;
+  }
+
+  .blog-text-container,
+  .blog-text-container h3,
+  .blog-text-container p,
+  .blog-image-container,
+  .best-coffee-image-container {
+    width: 100%;
+  }
+
+  .blog-new-home .blog-text-container {
+    padding-left: 0px;
+  }
+
+  .blog-text-container {
+    padding: 0 0 40px 0px;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  /* Header */
+
+  .hero-container {
+    max-width: 100%;
+  }
+
+  .social-links,
+  .header-nav {
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+  }
+
+  .best-coffee-text h3 {
+    line-height: 4.2rem;
+  }
+
+  .mobile-nav {
+    display: block;
+    position: absolute;
+    right: 0;
+    padding: 40px 40px 0 0;
+  }
+  
+
+  .hero-container h1 {
+    /* clear: both; */
+    font-size: 6rem;
+    line-height: 5.5rem;
+  }
+
+  .hero-container {
+    /* clear: both; */
+    padding-top: 175px;
+  }
+
+  .hero-container h2 {
+    font-size: 2.5rem;
+  }
+
+  header {
+    background-size: 75%;
+  }
+}
+
+
+
+
+
+
+
+
+
